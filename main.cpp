@@ -1,14 +1,10 @@
 #include <iostream>
-#include <thread>
+#include <pthread.h>
 
 using namespace std;
 
 struct Worker {
-    std::thread tid;
-
+  pthread_t tid;
 };
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+int main() { std::cout << "Hello World!\n"; }
