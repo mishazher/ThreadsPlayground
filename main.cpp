@@ -7,4 +7,8 @@ struct Worker {
   pthread_t tid;
 };
 
-int main() { std::cout << "Hello World!\n"; }
+int main() {
+  int b;
+  b = 12;
+  std::cout << "Hello World!\n";
+}
